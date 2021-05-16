@@ -1,0 +1,11 @@
+.RouteCard {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.RouteCard img {
+  width: 100%;
+  height: 16rem;
+  display: block;
+  object-fit: cover;
+}
