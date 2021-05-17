@@ -23,7 +23,6 @@
   "include": [
     "src",
     "src/*",
-    "src/**/*",
-    "**/*.test.tsx"
+    "src/**/*"
   ]
 }
