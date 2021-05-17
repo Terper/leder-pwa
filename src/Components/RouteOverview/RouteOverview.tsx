@@ -14,7 +14,7 @@ function RouteOverview(): ReactElement {
   const [items, setItems] = useState<any>();
   const [isLoaded, setIsLoaded] = useState(false);
   useEffect(() => {
-    fetch('http://localhost:4000/graphql', {
+    fetch('https://leder-api.herokuapp.com/graphql', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

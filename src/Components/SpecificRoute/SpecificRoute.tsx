@@ -10,7 +10,7 @@ export default function SpecificRoute(): ReactElement {
   const { routeId }: any = useParams();
   let hasPoints = false;
   useEffect(() => {
-    fetch('http://localhost:4000/graphql', {
+    fetch('https://leder-api.herokuapp.com/graphql', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
