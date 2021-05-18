@@ -17,7 +17,7 @@ export default function SpecificRoute(): ReactElement {
         Accept: 'application/json'
       },
       body: JSON.stringify({
-        query: `{ route (id: "${routeId}") { id name author image points { lat lng } description} }`
+        query: `{ route (id: "${routeId}") { id name author image imageAttribution points { lat lng } description} }`
       })
     })
       .then((r) => r.json())
@@ -48,6 +48,7 @@ export default function SpecificRoute(): ReactElement {
         <i className='gg-arrow-left' />
       </Link>
       <img src={item.image} alt='' />
+      <p className='imageAttribution'>Bild av {item.imageAttribution}</p>
       <section>
         <h1>{item.name}</h1>
         Av {item.author}

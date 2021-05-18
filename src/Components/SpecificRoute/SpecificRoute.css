@@ -1,13 +1,16 @@
 img {
   width: 100%;
-  height: 20rem;
   display: block;
-  object-fit: cover;
 }
+.imageAttribution {
+  text-align: right;
+  padding: 0 2rem;
+}
+
 section {
   margin: 0 2rem;
 }
-p {
+section p {
   max-width: 40ch;
 }
 .back {
