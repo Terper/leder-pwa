@@ -13,6 +13,7 @@ p {
 .back {
   padding: 1rem 2rem;
   display: block;
+  max-width: fit-content;
 }
 
 /* from css.gg */
@@ -20,10 +21,13 @@ p {
   box-sizing: border-box;
   position: relative;
   display: block;
-  color: #000;
-  transform: scale(var(--ggs, 1));
+  color: var(--h2);
+  transform: scale(var(--ggs, 2));
   width: 22px;
   height: 22px;
+}
+.gg-arrow-left:hover {
+  color: var(--h1);
 }
 .gg-arrow-left::after,
 .gg-arrow-left::before {

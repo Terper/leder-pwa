@@ -24,6 +24,7 @@
 .gg-spinner-two-alt {
   transform: scale(var(--ggs, 4));
   position: relative;
+  color: var(--tx);
 }
 .gg-spinner-two-alt::before {
   content: '';

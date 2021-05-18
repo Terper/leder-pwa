@@ -13,4 +13,8 @@
   padding: 1rem 2rem;
   margin: 0;
   display: block;
+  color: var(--h2);
+}
+.RouteCard:hover h1 {
+  color: var(--h1);
 }

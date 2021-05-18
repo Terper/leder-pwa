@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root {
+  --h1: rgb(47, 174, 199);
+  --h2: hsla(190, 75%, 37%, 1);
+  --bg: hsla(240, 100%, 99%, 1);
+  --fg: hsla(240, 23%, 94%, 1);
+  --tx: hsla(195, 4%, 22%, 1);
+}
 body {
   margin: auto;
   max-width: 600px;
   font-family: 'Open Sans', sans-serif;
+  color: var(--tx);
+  background-color: var(--bg);
 }
