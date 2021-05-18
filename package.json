@@ -1,6 +1,7 @@
 {
   "name": "pwa",
   "version": "0.1.0",
+  "author": {"name": "Jann Tötterman"},
   "private": true,
   "engines": {
     "node": "15.x"
