@@ -7,6 +7,7 @@ import Map from '../Map/Map';
 export default function SpecificRoute(): ReactElement {
   const [item, setItem] = useState<any>();
   const [isLoaded, setIsLoaded] = useState(false);
+  const [processError, setProcessError] = useState(false);
   const { routeId }: any = useParams();
   let hasPoints = false;
   useEffect(() => {
@@ -24,8 +25,21 @@ export default function SpecificRoute(): ReactElement {
       .then((data) => {
         setItem(data.data.route);
         setIsLoaded(true);
+      })
+      .catch((e) => {
+        setProcessError(true);
       });
   }, [routeId]);
+
+  if (processError) {
+    return (
+      <div className='error'>
+        <h2>Något gick fel</h2>
+        <Link to='/'>Tillbaka till start</Link>
+      </div>
+    );
+  }
+
   if (!isLoaded) {
     return <Spinner />;
   }

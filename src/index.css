@@ -13,3 +13,7 @@ body {
   color: var(--tx);
   background-color: var(--bg);
 }
+
+.error {
+  text-align: center;
+}
